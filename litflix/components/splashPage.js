@@ -21,6 +21,18 @@ export default class SplashPage extends React.Component {
   }
 }
 
+SplashPage.navigationOptions = {
+  title: '',
+  headerStyle: {
+    backgroundColor: 'black'
+  },
+  headerTintColor: '#fff',
+  headerTitleStyle: {
+    fontWeight: 'bold',
+    color: 'white'
+  }
+};
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,

@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { StatusBar } from 'react-native';
 import { Button } from 'react-native-ui-lib';
 import { createStackNavigator } from 'react-navigation';
 import SplashPage from './components/splashPage';
@@ -18,6 +18,7 @@ const RootStack = createStackNavigator(
 export default class App extends React.Component {
 
   render() {
+    StatusBar.setBarStyle('light-content', true);
     return <RootStack />;
   }
 }
