@@ -14,7 +14,7 @@ export default class SplashPage extends React.Component {
           labelStyle={{fontWeight: '600'}}
           enableShadow
           style={styles.button}
-          onPress={() => this.props.navigation.navigate('Movie')}
+          onPress={() => this.props.navigation.navigate('WhatToWatch')}
         />
       </View>
     );

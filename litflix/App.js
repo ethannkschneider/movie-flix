@@ -3,12 +3,12 @@ import { StatusBar } from 'react-native';
 import { Button } from 'react-native-ui-lib';
 import { createStackNavigator } from 'react-navigation';
 import SplashPage from './components/splashPage';
-import MovieCard from './components/movieCard';
+import WhatToWatchScreen from './components/whatToWatchScreen';
 
 const RootStack = createStackNavigator(
   {
     Splash: SplashPage,
-    Movie: MovieCard
+    WhatToWatch: WhatToWatchScreen
   },
   {
     initialRouteName: 'Splash'

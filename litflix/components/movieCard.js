@@ -2,8 +2,6 @@ import React from 'react';
 import { StyleSheet } from 'react-native';
 import { Button, Card, Text, View } from 'react-native-ui-lib';
 
-const cardImage = require('../assets/mr_beans_holiday.jpg');
-
 export default class MovieCard extends React.Component {
 
   render () {
@@ -17,7 +15,7 @@ export default class MovieCard extends React.Component {
               </View>
             </Card.Section>
             <Card.Section>
-              <Card.Image width={'100%'} height={300} imageSource={cardImage} />
+              <Card.Image width={'100%'} height={300} imageSource={this.props.cardImage} />
             </Card.Section>
             <Card.Section>
               <Text text70 dark10>
